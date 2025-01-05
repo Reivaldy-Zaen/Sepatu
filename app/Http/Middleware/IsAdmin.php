@@ -20,7 +20,7 @@ class IsAdmin
         {
             return $next($request);
         }else{
-            return redirect()->route('dashboard')->with('failed', 'gk bisa!');
+            return redirect()->route('landing_page')->with('failed', 'gk bisa!');
         }
     }
 }

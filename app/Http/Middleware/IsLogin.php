@@ -20,7 +20,7 @@ class IsLogin
         {
             return $next($request);
         }else{
-            return redirect()->route('login')->with('canAccess','Anda harus login terlebih dahulu');
+            return redirect()->route('login')->with('belum akses','Anda harus login terlebih dahulu');
         }
     }
 }

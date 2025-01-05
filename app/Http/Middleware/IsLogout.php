@@ -19,7 +19,7 @@ class IsLogout
         if(Auth::check() == false){
             return $next($request);
         }else{
-            return redirect()->route('dashboard')->with('failed', 'anda sudah login tidak dapat melakukan proses login kembali');
+            return redirect()->route('landing_page')->with('failed', 'anda sudah login tidak dapat melakukan proses login kembali');
         }
         
     }
